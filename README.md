@@ -22,17 +22,13 @@ Once a face is detected, the region is cropped and resized to 227x227 pixels to 
 
 3. Deep Learning Classification (AlexNet)
 The "brain" of the system is a fine-tuned AlexNet CNN.
+  Transfer Learning: The earlier layers of the pre-trained network are "frozen" to preserve general feature extraction knowledge.
 
+  Custom Layers: The final fully connected layers are replaced and retrained on a custom dataset tailored to the specific individuals being recognized.
 
-Transfer Learning: The earlier layers of the pre-trained network are "frozen" to preserve general feature extraction knowledge.
+  Training: The model is trained for 20 epochs using GPU acceleration to minimize training time while maximizing accuracy.
 
-
-Custom Layers: The final fully connected layers are replaced and retrained on a custom dataset tailored to the specific individuals being recognized.
-
-
-Training: The model is trained for 20 epochs using GPU acceleration to minimize training time while maximizing accuracy.
-
-4. Real-Time Annotation & UI
+5. Real-Time Annotation & UI
 The final output overlays a bounding box and a predicted label (e.g., "Person 1" or "Ramana") directly onto the live video feed. To enhance usability, the interface provides feedback if no face is detected, ensuring a smooth user experience
 Key Performance Features
 
