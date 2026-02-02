@@ -34,3 +34,12 @@ Training: The model is trained for 20 epochs using GPU acceleration to minimize 
 
 4. Real-Time Annotation & UI
 The final output overlays a bounding box and a predicted label (e.g., "Person 1" or "Ramana") directly onto the live video feed. To enhance usability, the interface provides feedback if no face is detected, ensuring a smooth user experience
+Key Performance Features
+
+Parallel Execution: The architecture is optimized to perform detection and classification concurrently using hardware-enabled GPUs.
+
+
+Accuracy: By using a library of approximately 150 labeled images per individual, the model learns to generalize effectively across different expressions and lighting conditions.
+
+
+Scalability: The modular design allows the system to be deployed on edge devices for local processing or integrated into cloud-based surveillance environments.
